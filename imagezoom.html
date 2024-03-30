@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+
+<html> 
+
+ 
+
+<head> 
+
+    <meta charset="UTF-8" /> 
+
+    <meta name="viewport"  
+
+          content="width=device-width, initial-scale=1.0" /> 
+
+    <title> 
+
+       imgzooming 
+
+    </title> 
+
+    <style> 
+
+        body { 
+
+            text-align: center; 
+
+        } 
+
+ 
+
+        .image-container img { 
+
+            transition: transform 0.3s ease-in-out; 
+
+        } 
+
+ 
+
+        .image-container img:hover { 
+
+            transform: scale(1.2); 
+
+        } 
+
+    </style> 
+
+</head> 
+
+ 
+
+<body> 
+
+    <h1>HAI ALL!!!</h1> 
+
+    <div class="image-container" > 
+
+        <img src= 
+
+"https://cdn.pixabay.com/photo/2018/05/09/21/55/baby-3386242_1280.jpg"  
+
+             alt="Image of child" /> 
+
+    </div> 
+
+</body> 
+
+<script> 
+
+document.addEventListener('contextmenu', function(e) {  
+
+    e.preventDefault(); 
+
+    alert("You can't acess the right click");  
+
+  }); </script> 
+
+ 
+
+</html> 
+
+ 
+
+ 
+
+ 
+
+ 

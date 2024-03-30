@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Array Sorting</title>
+</head>
+<body>
+    <h1>Array Sorting</h1>
+
+    <p>Original array:</p>
+    <p id="originalArray"></p>
+
+    <p>Sorted array:</p>
+    <p id="sortedArray"></p>
+
+    <script>
+        // Original array
+        var originalArray = [5, 2, 9, 1, 7];
+
+        // Display original array
+        document.getElementById("originalArray").innerHTML = originalArray.join(", ");
+
+        // Sort the array
+        var sortedArray = originalArray.slice().sort(function(a, b) {
+            return a - b;
+        });
+
+        // Display sorted array
+        document.getElementById("sortedArray").innerHTML = sortedArray.join(", ");
+    </script>
+</body>
+</html>

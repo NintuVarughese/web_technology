@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leap Year Checker</title>
+<style>
+    /* Style for demonstration */
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 50px;
+    }
+    input {
+        padding: 10px;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    p {
+        font-size: 18px;
+    }
+</style>
+</head>
+<body>
+    <h1>Leap Year Checker</h1>
+    <p>Enter a year:</p>
+    <input type="number" id="yearInput">
+    <button onclick="checkLeapYear()">Check</button>
+    <p id="result"></p>
+
+    <script>
+        // Leap years JSON data
+        var leapYearsData = {
+            "leapYears": [1992, 1996, 2000, 2004, 2008, 2012, 2016, 2020, 2024, 2028, 2032, 2036, 2040]
+        };
+
+        function checkLeapYear() {
+            // Get the value of the input field
+            var year = parseInt(document.getElementById("yearInput").value);
+
+            // Check if the year is present in the list of leap years
+            if (leapYearsData.leapYears.includes(year)) {
+                document.getElementById("result").innerHTML = year + " is a leap year!";
+            } else {
+                document.getElementById("result").innerHTML = year + " is not a leap year.";
+            }
+        }
+    </script>
+</body>
+</html>

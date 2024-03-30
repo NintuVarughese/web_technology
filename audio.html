@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Audio Example</title>
+<style>
+  /* Style for the audio player container */
+  .audio-container {
+    width: 300px; /* Adjust the width as needed */
+    margin: 20px auto;
+    display: block;
+    background-image: url('https://getsamplefiles.com/download/jpg/sample-2.jpg'); /* URL of the background image */
+    background-size: cover; /* Adjust background size as needed */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Adjust padding as needed */
+  }
+
+  /* Style for the audio player */
+  audio {
+    width: 100%; /* Make the audio player fill the container */
+  }
+
+  audio::-webkit-media-controls-panel {
+    background-color: rgba(255, 255, 255, 0.7); /* Background color with opacity for better readability */
+    border-radius: 8px; /* Rounded corners */
+  }
+
+  audio::-webkit-media-controls-play-button {
+    color: #333; /* Color of play button */
+  }
+
+  audio::-webkit-media-controls-volume-slider {
+    width: 80px; /* Width of volume slider */
+  }
+
+  audio::-webkit-media-controls-timeline {
+    background-color: #ccc; /* Color of the timeline */
+    height: 6px; /* Height of the timeline */
+  }
+
+  audio::-webkit-media-controls-current-time-display,
+  audio::-webkit-media-controls-time-remaining-display {
+    color: #666; /* Color of the time display */
+  }
+</style>
+</head>
+<body>
+
+<div class="audio-container">
+  <audio controls>
+    <source src="audio.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+</body>
+</html>
